@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Report</title>
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="report.component.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
+
+</head>
+
+<body>
+
+    <script id="template" type="text/x-handlebars-template">
+        <div class="document-title">
+            <h2>{{title}}</h2>
+            <div>Score: {{stats.score.MO}}/{{stats.score.MM}}</div>
+        </div>
+
+        <div class="candidate-details">
+            <div class="candidate-info">
+                <span>Name: {{candidate.name}}</span>
+                <span>Role: {{candidate.role}}</span>
+                <span>Email: {{candidate.email}}</span>
+                <span>Phone: {{candidate.phone}}</span>
+            </div>
+            <div class="stats-info">
+                <span>Date: {{stats.testDate}}</span>
+                <span>Total Time: {{stats.totalTimeTaken}} Minutes</span>
+                <span>Tabs Switch: {{stats.tabsSwitch}} Times</span>
+                <span>Total Distracted Time: {{stats.totalDistractedTime}} Seconds</span>
+            </div>
+        </div>
+        <h3>Question Details</h3>
+        {{#each questions}}
+        <div class="question">
+            <section>Q{{increment @index}}: {{question}}</section>
+            <section>
+                <ul>
+                    {{#each options}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </section>
+            <section><span>Time: {{timeTaken}} Seconds</span> </section>
+        </div>
+        {{/each}}
+    </script>
+
+
+
+    <main class="container">
+
+    </main>
+
+    <script type="text/javascript" src="report.component.js"></script>
+</body>
+
+</html>

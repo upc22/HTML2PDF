@@ -1,0 +1,16 @@
+{
+  "name": "report-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "report.component.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jspdf": "^1.3.3",
+    "jsreport": "^1.7.0",
+    "phantom-html-to-pdf": "^0.5.2"
+  }
+}

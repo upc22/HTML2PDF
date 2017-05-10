@@ -1,0 +1,48 @@
+<!-- 
+Invoice dynamically rendered into html using handlebars and converted into pdf
+using phantom-pdf recipe. The styles are extracted into separate asset for 
+better readability and later reuse.
+
+Data to this sample are mocked at the design time and should be filled on the 
+incoming API request.
+!-->
+
+<style>
+    {#asset Invoice styles.css @encoding=utf8}
+</style>
+
+ <main class="container">
+        <div class="document-title">
+            <h2>Test Summary</h2>
+            <div>Score: 70/100</div>
+        </div>
+
+        <div class="candidate-details">
+            <div class="candidate-info">
+                <span>Name: Uttam Pratap</span>
+                <span>Role: AL1</span>
+                <span>Email: upratap@sapient.com</span>
+                <span>Phone: 9693098182</span>
+            </div>
+            <div class="stats-info">
+                <span>Date: 25/04/2017</span>
+                <span>Total Time: 10:54 Minutes</span>
+                <span>Tabs Switch: 3 Times</span>
+                <span>Total Distracted Time: 5 Seconds</span>
+            </div>
+        </div>
+        <h3>Question Details</h3>
+        <div class="question">
+            <section>Q1: When a class B can extend another class A, we say that?</section>
+            <section>
+                <ul>
+                    <li>B is the superclass and A is the subclass</li>
+                    <li class="response">Both A and B are the superclass</li>
+                    <li>Both A and B are the subclass</li>
+                    <li class="correct">A is the superclass and B is the subclass</li>
+
+                </ul>
+            </section>
+            <section><span>Time: 40 Seconds</span> </section>
+        </div>
+    </main>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Report</title>
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="report.component.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+
+</head>
+
+<body style="padding: 5px;
+    font-family: 'Taviraj', serif;">
+
+    <main class="container">
+        <div class="document-title">
+            <h2>Test Summary</h2>
+            <div>Score: 70/100</div>
+        </div>
+
+        <div class="candidate-details">
+            <div class="candidate-info">
+                <span>Name: Uttam Pratap</span>
+                <span>Role: AL1</span>
+                <span>Email: upratap@sapient.com</span>
+                <span>Phone: 9693098182</span>
+            </div>
+            <div class="stats-info">
+                <span>Date: 25/04/2017</span>
+                <span>Total Time: 10:54 Minutes</span>
+                <span>Tabs Switch: 3 Times</span>
+                <span>Total Distracted Time: 5 Seconds</span>
+            </div>
+        </div>
+        <h3>Question Details</h3>
+        <div class="question">
+            <section>Q1: When a class B can extend another class A, we say that?</section>
+            <section>
+                <ul>
+                    <li>B is the superclass and A is the subclass</li>
+                    <li class="response">Both A and B are the superclass</li>
+                    <li>Both A and B are the subclass</li>
+                    <li class="correct">A is the superclass and B is the subclass</li>
+
+                </ul>
+            </section>
+            <section><span>Time: 40 Seconds</span> </section>
+        </div>
+    </main>
+
+
+
+</body>
+<script>
+    var doc = new jsPDF();
+
+    // We'll make our own renderer to skip this editor
+    var specialElementHandlers = {
+        '#editor': function(element, renderer) {
+            return true;
+        }
+    };
+
+    // All units are in the set measurement for the document
+    // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
+    doc.fromHTML(document.getElementsByTagName('body')[0], 15, 15, {
+        'width': 170,
+        'elementHandlers': specialElementHandlers
+    });
+    doc.save('two-by-four.pdf')
+</script>
+
+</html>

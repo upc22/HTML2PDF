@@ -1,0 +1,123 @@
+2017-05-10T06:39:29.832Z - info: Initializing jsreport@1.7.0 in development mode using configuration file dev.config.json
+2017-05-10T06:39:29.834Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-05-10T06:39:29.841Z - info: Searching for available extensions in D:\Practice\HTML2PDF\
+2017-05-10T06:39:29.845Z - info: Extensions location cache not found, crawling directories
+2017-05-10T06:39:33.024Z - info: Found 29 extensions
+2017-05-10T06:39:33.065Z - info: Using extension import-export
+2017-05-10T06:39:33.650Z - info: Using extension tags
+2017-05-10T06:39:33.663Z - info: Using extension templates
+2017-05-10T06:39:33.670Z - info: Using extension jsrender
+2017-05-10T06:39:33.671Z - info: Using extension cli
+2017-05-10T06:39:33.673Z - info: Using extension debug
+2017-05-10T06:39:33.674Z - info: Using extension express
+2017-05-10T06:39:33.905Z - info: Using extension fop-pdf
+2017-05-10T06:39:33.921Z - info: Using extension handlebars
+2017-05-10T06:39:33.925Z - info: Using extension phantom-pdf
+2017-05-10T06:39:33.952Z - info: Using extension fs-store
+2017-05-10T06:39:34.413Z - info: Using extension images
+2017-05-10T06:39:34.431Z - info: Using extension data
+2017-05-10T06:39:34.435Z - info: Using extension child-templates
+2017-05-10T06:39:34.439Z - info: Using extension licensing
+2017-05-10T06:39:34.597Z - info: Using extension authorization
+2017-05-10T06:39:34.610Z - info: Using extension text
+2017-05-10T06:39:34.612Z - info: Using extension reports
+2017-05-10T06:39:34.628Z - info: Using extension resources
+2017-05-10T06:39:34.631Z - info: Using extension browser-client
+2017-05-10T06:39:34.634Z - info: Using extension studio
+2017-05-10T06:39:34.861Z - info: Using extension html-to-xlsx
+2017-05-10T06:39:35.035Z - info: Using extension scripts
+2017-05-10T06:39:35.039Z - info: Using extension assets
+2017-05-10T06:39:35.066Z - info: Using extension scheduling
+2017-05-10T06:39:35.124Z - info: Using extension xlsx
+2017-05-10T06:39:35.436Z - info: Using extension sample-template
+2017-05-10T06:39:35.439Z - info: Using extension public-templates
+2017-05-10T06:39:35.459Z - info: Initializing fs storage at D:\Practice\HTML2PDF\data
+2017-05-10T06:39:35.651Z - info: Creating default express app.
+2017-05-10T06:39:35.757Z - info: jsreport server successfully started on http port: 5488
+2017-05-10T06:39:35.770Z - info: Veryfing license key free
+2017-05-10T06:39:36.884Z - info: Using free license
+2017-05-10T06:39:37.220Z - info: reporter initialized
+2017-05-10T06:44:04.181Z - info: Starting rendering request 1 (user: null) requestId=1
+2017-05-10T06:44:04.188Z - info: Rendering template {shortid:HJH11D83ce, recipe:phantom-pdf,engine:handlebars} requestId=1
+2017-05-10T06:44:04.706Z - error: Error when processing render request Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (D:\Practice\HTML2PDF\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.runInNewContext (vm.js:93:38)
+    at module.exports (D:\Practice\HTML2PDF\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (D:\Practice\HTML2PDF\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:753:12) requestId=1
+2017-05-10T06:44:04.709Z - error: Error during processing request: http://localhost:5488/api/report/Orders details: Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (D:\Practice\HTML2PDF\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.runInNewContext (vm.js:93:38)
+    at module.exports (D:\Practice\HTML2PDF\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (D:\Practice\HTML2PDF\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:753:12)
+2017-05-10T06:44:17.357Z - info: Starting rendering request 2 (user: null) requestId=2
+2017-05-10T06:44:17.359Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=2
+2017-05-10T06:44:19.641Z - info: Rendering request 2 finished in 2285 ms requestId=2
+2017-05-10T06:45:38.479Z - info: Starting rendering request 3 (user: null) requestId=3
+2017-05-10T06:45:38.481Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=3
+2017-05-10T06:45:40.129Z - info: Rendering request 3 finished in 1649 ms requestId=3
+2017-05-10T06:46:17.757Z - info: Starting rendering request 4 (user: null) requestId=4
+2017-05-10T06:46:17.758Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=4
+2017-05-10T06:46:19.644Z - info: Rendering request 4 finished in 1887 ms requestId=4
+2017-05-10T06:49:57.884Z - info: Starting rendering request 5 (user: null) requestId=5
+2017-05-10T06:49:57.885Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=5
+2017-05-10T06:49:59.517Z - info: Rendering request 5 finished in 1635 ms requestId=5
+2017-05-10T06:50:40.783Z - info: Starting rendering request 6 (user: null) requestId=6
+2017-05-10T06:50:40.786Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=6
+2017-05-10T06:50:42.362Z - info: Rendering request 6 finished in 1578 ms requestId=6
+2017-05-10T06:56:04.783Z - info: Starting rendering request 7 (user: null) requestId=7
+2017-05-10T06:56:04.784Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=7
+2017-05-10T06:56:06.401Z - info: Rendering request 7 finished in 1618 ms requestId=7
+2017-05-10T06:56:22.573Z - info: Starting rendering request 8 (user: null) requestId=8
+2017-05-10T06:56:22.574Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=8
+2017-05-10T06:56:24.148Z - info: Rendering request 8 finished in 1576 ms requestId=8
+2017-05-10T06:59:52.770Z - info: Starting rendering request 9 (user: null) requestId=9
+2017-05-10T06:59:52.774Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=9
+2017-05-10T06:59:54.717Z - info: Rendering request 9 finished in 1949 ms requestId=9
+2017-05-10T07:02:11.944Z - info: Starting rendering request 10 (user: null) requestId=10
+2017-05-10T07:02:11.946Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=10
+2017-05-10T07:02:13.697Z - info: Rendering request 10 finished in 1753 ms requestId=10
+2017-05-10T07:04:44.560Z - info: Starting rendering request 11 (user: null) requestId=11
+2017-05-10T07:04:44.561Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=11
+2017-05-10T07:04:46.231Z - info: Rendering request 11 finished in 1671 ms requestId=11
+2017-05-10T07:05:14.219Z - info: Starting rendering request 12 (user: null) requestId=12
+2017-05-10T07:05:14.223Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=12
+2017-05-10T07:05:15.771Z - info: Rendering request 12 finished in 1552 ms requestId=12
+2017-05-10T07:05:21.876Z - info: Starting rendering request 13 (user: null) requestId=13
+2017-05-10T07:05:21.877Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=13
+2017-05-10T07:05:23.493Z - info: Rendering request 13 finished in 1618 ms requestId=13
+2017-05-10T07:06:00.217Z - info: Starting rendering request 14 (user: null) requestId=14
+2017-05-10T07:06:00.218Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=14
+2017-05-10T07:06:01.849Z - info: Rendering request 14 finished in 1633 ms requestId=14
+2017-05-10T07:06:38.936Z - info: Starting rendering request 15 (user: null) requestId=15
+2017-05-10T07:06:38.937Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=15
+2017-05-10T07:06:40.465Z - info: Rendering request 15 finished in 1531 ms requestId=15
+2017-05-10T07:07:15.167Z - info: Starting rendering request 16 (user: null) requestId=16
+2017-05-10T07:07:15.169Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=16
+2017-05-10T07:07:16.761Z - info: Rendering request 16 finished in 1595 ms requestId=16
+2017-05-10T07:07:24.472Z - info: Starting rendering request 17 (user: null) requestId=17
+2017-05-10T07:07:24.472Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=17
+2017-05-10T07:07:25.923Z - info: Rendering request 17 finished in 1452 ms requestId=17
+2017-05-10T07:07:36.046Z - info: Starting rendering request 18 (user: null) requestId=18
+2017-05-10T07:07:36.051Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=18
+2017-05-10T07:07:37.714Z - info: Rendering request 18 finished in 1687 ms requestId=18
+2017-05-10T07:07:42.658Z - info: Starting rendering request 19 (user: null) requestId=19
+2017-05-10T07:07:42.659Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=19
+2017-05-10T07:07:44.360Z - info: Rendering request 19 finished in 1703 ms requestId=19
+2017-05-10T07:10:11.621Z - info: Starting rendering request 20 (user: null) requestId=20
+2017-05-10T07:10:11.621Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=20
+2017-05-10T07:10:13.446Z - info: Rendering request 20 finished in 1825 ms requestId=20
+2017-05-10T07:11:09.049Z - info: Starting rendering request 21 (user: null) requestId=21
+2017-05-10T07:11:09.052Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf,engine:handlebars} requestId=21
+2017-05-10T07:11:10.480Z - info: Rendering request 21 finished in 1429 ms requestId=21
